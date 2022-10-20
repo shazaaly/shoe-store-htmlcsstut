@@ -1,0 +1,77 @@
+/* global styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans';
+    line-height: 1.5em;
+
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.container {
+    width: 85%;
+    /* max-width: 60em; */
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: .5em 1.25em;
+    border-radius: .25em;
+    color: #1f1b29;
+    background-color: blue;
+    background: none;
+    border: 2px solid;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* transition */
+    transition: 250ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: blue;
+    color: white;
+    
+
+}
+/* btn at section hero */
+.hero a.btn{
+    background-color: #444;
+    color: white;
+    margin-top: 1.2rem;
+}
+.primary-title{
+    font-size: 4rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+.hero{
+    /* background-color: red; */
+    text-align: center;
+    color: white;
+    padding: 15em 0;
+    background-image: url(./img/shoe-3.png),radial-gradient(#444, #111);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center;
+
+}
