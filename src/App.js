@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import { Layout } from './components/Layout/Layout';
+import './App.scss';
+import { Home } from './components/Home/Home';
+import { About } from './components/About/About';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+      {/* 
+      An <Outlet> should be used in parent route elements
+       to render their child route elements. 
+       This allows nested UI to show up when child routes are rendered.
+        If the parent route matched exactly, 
+        it will render a child index route or nothing if there is no index route.
+       */}
+        <Route path='/' element={<Layout />} >   
+
+          <Route index element={ <Home />} />
+          <Route path='about'  element={ <About /> } />
+        </Route>
+      </Routes>
+    </>
   );
 }
 

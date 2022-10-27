@@ -1,0 +1,140 @@
+.nav-bar {
+    background: #181818;
+    width: 80px;
+    height: 100%;
+    min-height: 500px;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+
+    .logo {
+        display: block;
+        padding: 8px 0;
+
+        img {
+            display: block;
+            margin: 8px auto;
+            width: 35px;
+            height: auto;
+
+            &.sub-logo {
+                width: 60px;
+            }
+
+        }
+    }
+
+}
+
+/* Style nav(cont fontawesome icons) in Sidebar.js */
+nav {
+
+    display: block;
+    text-align: center;
+    height: 210px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -120px;
+
+    a{
+        
+        position: relative;
+        font-size: 22px;
+        color: #4d4d4e;
+        height: 51px;
+        line-height: 51px;
+        display: block;
+        text-decoration: none;
+
+        i {
+            transition: all .3s ease-out;
+
+        }
+
+        /* when hover on fontawesome icons */
+        &:hover {
+            color: #ffd700;
+
+            /*when hover on icon svg it disappears */
+            svg {
+                opacity: 0;
+            }
+
+            &:after {
+                opacity: 1;
+            }
+        }
+
+        /* Global: any after content for any child nested inside a  */
+        &:after {
+            content: '';
+            font-size: 12px;
+            letter-spacing: 2px;
+            position: absolute;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+
+        }
+
+        &:first-child {
+            &:after {
+                content: 'HOME';
+            }
+        }
+
+    }
+
+    /* rest of navlinks will be outer the a and selected separately*/
+    a.about-link {
+        &:after {
+            content: 'About';
+        }
+
+    }
+
+    a.contact-link {
+        &:after {
+            content: 'Contact';
+        }
+
+    }
+
+    a.active{
+        svg{
+            color: #ffd700;
+        }
+    }
+
+}
+ul{
+    position: absolute;
+    bottom: 20px;
+    display: block;
+    padding: 0;
+    margin: 0 ;
+    list-style: none;
+    text-align: center;
+
+    li{
+        a{
+            /*add width to centralize icons- added by me */ 
+            width: 8rem;
+            
+            padding:  7px 0;
+            display: block;
+            font-size: 15px;
+            line-height: 16px;
+
+            &:hover svg{
+                color: #ffd700;
+
+            }
+        }
+    }
+}

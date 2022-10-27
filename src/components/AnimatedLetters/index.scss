@@ -1,0 +1,32 @@
+
+.text-animate { 
+    
+    display: inline-block;  /* to be a word in a sent. */
+    opacity: 0;  /* initially */
+    animation: bounceIn 1s 1s;
+    animation-fill-mode: forwards; /*The animation-fill-mode CSS property sets how a CSS animation applies styles to its target before and after its execution. */
+    min-width: 10px;
+
+}
+
+/*39 min*/
+
+@for $i from 1 through 35 {
+    .text-animate._#{$i} {  /* text-animate._15  for example  */ 
+      animation-delay: #{$i / 10}s;
+    }
+  }
+
+  .text-animate-hover {
+    min-width: 10px; /* prevent letters collapse when bounce   */ 
+    display: inline-block;
+    animation-fill-mode: both;
+
+    &:hover{
+      animation: rubberBand 1s;
+      color:  #ffd700;
+
+
+    }
+
+  }

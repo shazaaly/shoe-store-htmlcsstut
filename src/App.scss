@@ -1,0 +1,67 @@
+/*
+// // in scss we can use variables: 
+// $primary-color: #ffd700;
+
+// //import css libraries needed : //
+// @import 'animate.css';
+// //Let us Specify a font named "myFirstFont", and specify the URL where it can be found(file path)://
+
+
+//  @font-face {
+//   font-family:  'Helvetica Neue';
+//   src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+// }
+
+
+// @font-face{
+//   font-family: 'La Belle Aurore';
+//   src: url('./assets/fonts/LaBelleAurore.ttf') format('ttf');
+// }
+
+// @font-face{
+//   font-family: 'Coolvetica';
+//   src: url('./assets/fonts/Coolvetica.woff2') format('woff2');
+// }
+
+// input, textarea{
+//   font-family: 'Helvetica Neue';
+// }
+*/
+
+$primary-color: #ffd700;
+@import 'animate.css';
+
+body {
+  font-family: Helvetica;
+  @font-face {
+     
+    font-family: 'Helvetica-Neu';
+    src: url('../src/assets/fonts/helvetica-neu.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'La Belle Aurore';
+    src: url('../src/assets/fonts/LaBelleAurore.woff2') format('woff2'),
+      url('../src/assets/fonts/LaBelleAurore.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Coolvetica';
+    src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2'),
+      url('./assets/fonts/CoolveticaRg-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+}
+
+
+input,
+textarea {
+  font-family: 'Helvetica Neue', sans-serif;
+}
