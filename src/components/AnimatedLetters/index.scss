@@ -21,10 +21,13 @@
     min-width: 10px; /* prevent letters collapse when bounce   */ 
     display: inline-block;
     animation-fill-mode: both;
+    color:  #ffd700;
+    
 
     &:hover{
       animation: rubberBand 1s;
-      color:  #ffd700;
+      
+      color: white;
 
 
     }

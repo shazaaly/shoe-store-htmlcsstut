@@ -20,15 +20,15 @@ export const Sidebar = () => {
       </Link>
 
       <nav>
-        <NavLink exact='true' activevlassname='active' to='/'>
+        <NavLink end activevlassname='active' to='/'  >
           <FontAwesomeIcon icon={faHome} color='4d4d4e' />
         </NavLink>
 
-        <NavLink exact='true' activevlassname='active' className='about-link' to='/about'>
+        <NavLink  activevlassname='active' className='about-link' to='/about'>
           <FontAwesomeIcon icon={faUser} color='4d4d4e' />
         </NavLink>
 
-        <NavLink exact='true' activevlassname='active' className='contact-link' to='/contact'>
+        <NavLink  activevlassname='active' className='contact-link' to='/contact'>
           <FontAwesomeIcon icon={faEnvelope} color='4d4d4e' />
         </NavLink>
       </nav>
@@ -58,7 +58,9 @@ export const Sidebar = () => {
 
 
         </li>
+    
       </ul>
+      
     </div>
   )
 }

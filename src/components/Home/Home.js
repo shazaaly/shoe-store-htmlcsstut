@@ -5,6 +5,7 @@ import letterLogo from '../../assets/images/logo-s.png'
 import './index.scss'
 import { AnimatedLetters } from '../AnimatedLetters/AnimatedLetters'
 import { Logo } from './Logo/Logo'
+import Loader from 'react-loaders'
 
 
 export const Home = () => {
@@ -28,22 +29,27 @@ export const Home = () => {
 
 
     return (
-        <div className='container home-page'>
-            <div className='text-zone'>
-                <h1>Hi, <br /> I'm
-                    <img src={letterLogo} alt='web-developer' />
-                    <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={15} />
+        <>
+            <div className='container home-page'>
+                <div className='text-zone'>
+                    <h1>Hi, <br /> I'm
+                        <img src={letterLogo} alt='web-developer' />
+                        <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={15} />
 
-                    <br />
-                    <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={22} />.
+                        <br />
+                        <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={22} />.
 
-                </h1>
-                <h2>
-                    JavaScript | Fullstack Web Developer
-                </h2>
-                <Link className='flat-button' to='/contact'>CONTACT ME</Link>
+                    </h1>
+                    <h2>
+                        JavaScript | Fullstack Web Developer
+                    </h2>
+                    <Link className='flat-button' to='/contact'>CONTACT ME</Link>
+                </div>
+                <Logo />
             </div>
-            <Logo />
-        </div>
+
+            <Loader type='pacman' />   {/* import from React-Loader */}
+
+        </>
     )
 }

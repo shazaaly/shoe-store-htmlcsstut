@@ -1,0 +1,123 @@
+.contact-form {
+  width: 100%;
+  // margin-top: 20px;
+  margin-top: 70%;
+
+  /* changed by me instead of commented margin top */
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+
+    .halvesToFlex {
+      margin-right: -3%;
+      /* to adjust email width to alighn with rest of items */
+      display: flex;
+
+    }
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      opacity: 0;
+      overflow: hidden;
+      display: block;
+      position: relative;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
+      border-radius: 5px;
+    }
+
+    input[type='text'],
+    input[type='email'] {
+
+      width: 100%;
+      border: 0;
+      height: 50px;
+      background: #115173;
+      color: #fff;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      width: 100%;
+      border: 0;
+      background: #115173;
+      color: #fff;
+      height: 50px;
+      font-size: 16px;
+      padding: 15px;
+      min-height: 90px;
+      box-sizing: border-box;
+      /* to limit size */
+
+    }
+
+    .half {
+      margin-right: 3%;
+    }
+
+    .flat-button {
+      color: #ffd700;
+      background: transparent;
+      /* same as 0 0 */
+      font: 11px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      padding: 8px 10px;
+      border: 1px solid #ffd700;
+      float: right;
+      border-radius: 4px;
+      cursor: pointer;
+
+
+    }
+
+  }
+
+
+}
+
+
+#idmap {
+  // background-color: red;
+  width: 40%;
+  height: 80%;
+  position: relative;
+  top: 20%;
+  left: 50%;
+  border-radius: 2px;
+
+
+}
+
+.info {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  border-radius: 5px;
+  font-family: fantasy;
+
+  position: absolute;
+  z-index: 99;
+  background-color: black;
+  opacity: 0.8;
+  width: 15%;
+  height: 15%;
+  top: 15rem;
+  right: 45rem;
+  color: wheat;
+  padding: 1rem;
+
+}
+
+.mapboxgl-map {
+  animation: backInRight 1s 2s;
+  animation-fill-mode: forwards; //to mAKE MAP STAY IN PAGE
+
+}
+

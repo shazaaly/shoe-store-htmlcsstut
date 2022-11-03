@@ -3,6 +3,7 @@ import { Layout } from './components/Layout/Layout';
 import './App.scss';
 import { Home } from './components/Home/Home';
 import { About } from './components/About/About';
+import { Contact } from './components/Contact/Contact';
 
 
 function App() {
@@ -16,10 +17,10 @@ function App() {
         If the parent route matched exactly, 
         it will render a child index route or nothing if there is no index route.
        */}
-        <Route path='/' element={<Layout />} >   
-
+        <Route  path='/' element={<Layout />} >   
           <Route index element={ <Home />} />
           <Route path='about'  element={ <About /> } />
+          <Route path='contact'  element={ <Contact /> } />
         </Route>
       </Routes>
     </>

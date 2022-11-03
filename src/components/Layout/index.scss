@@ -40,11 +40,13 @@
 
 }
 
-.about-page {
+.about-page, .contact-page {
     .text-zone {
         position: absolute;
         left: 10%;
-        top: 50%;
+        // top: 50%;
+        top: 60%;
+
         transform: translateY(-50%);
         width: 35%;
         vertical-align: middle;
